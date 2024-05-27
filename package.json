@@ -30,6 +30,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
+    "bwit-react-ui-lib": "^1.0.4",
     "devextreme": "23.2",
     "devextreme-react": "23.2",
     "react": "^18.2.0",

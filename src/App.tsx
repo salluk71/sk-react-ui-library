@@ -1,5 +1,6 @@
 
-import { DragDropList } from "./components/DragDropList";
+import {DragDropList} from 'bwit-react-ui-lib'
+// import { DragDropList } from "./components/DragDropList";
 
 
 function App() {
