@@ -1,0 +1,159 @@
+
+#sidebar {
+  height: 100%;
+}
+
+.dx-sidebarTree {
+  width: 300px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.element-none{
+  display: none !important;
+}
+.dx-drag-drop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dx-layout-title i {
+  pointer-events: none;
+}
+
+.hide-drag-handler .dx-list-reorder-handle-container {
+  display: none;
+}
+
+.archiveList *,
+.archiveList.dx-list {
+  height: auto !important;
+  min-height: unset !important;
+}
+
+.dx-drag-drop .dx-list {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dx-drag-drop .dx-searchbox {
+
+  margin: 0 8px;
+  margin-bottom: 2px;
+}
+
+.dx-drag-drop .dx-loader-wrap {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.dx-drag-drop .dx-loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: rotation 2s linear infinite;
+  animation: rotation 2s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dx-drag-drop .dx-list-item-content {
+  display: block;
+  width: 90%;
+  padding: 2px 10px;
+}
+
+.dx-drag-drop .dx-item.dx-list-item {
+  position: relative;
+  border: 0;
+}
+
+.btnCustomLayoutStar,
+.btnCustomLayoutTrash,
+.btnCustomLayoutDefaultStar {
+  visibility: hidden;
+  opacity: 0;
+  color: #28a745;
+  border: none;
+}
+
+.btnCustomLayoutDefaultStar {
+  color: #28a745 !important;
+}
+
+.btnCustomLayoutTrash {
+  color: red;
+}
+
+.btnCustomLayoutStar:hover,
+.btnCustomLayoutTrash:hover {
+  scale: 1.1;
+}
+
+.dx-drag-drop .dx-item.dx-list-item:hover .btnCustomLayoutStar,
+.dx-drag-drop .dx-item.dx-list-item:hover .btnCustomLayoutTrash,
+.dx-drag-drop .dx-item.dx-list-item .btnCustomLayoutDefaultStar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dx-drag-drop .dx-sortable-clone {
+  opacity: 1;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.dx-drag-drop .dx-element-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+.dx-drag-drop .dx-list-search {
+  margin-bottom: 2px;
+}
+
+
+.dx-drag-drop .dx-item.dx-list-item:has(.locked-item) {
+  cursor: auto;
+}

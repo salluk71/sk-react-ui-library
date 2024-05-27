@@ -1,5 +1,5 @@
 import { Button } from "../../interfaces/Button";
-import {Button as DXButton} from 'devextreme-react';
+import {Button as DXButton,  } from 'devextreme-react';
 
 function index({text}:Button) {
   return (

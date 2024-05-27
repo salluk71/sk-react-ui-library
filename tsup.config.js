@@ -9,7 +9,7 @@ export default defineConfig({
   target: 'es2020',
   splitting: false,
   sourcemap: false,
-  minify: true,
+  minify: false,
   clean: true,
   dts: true,
 });

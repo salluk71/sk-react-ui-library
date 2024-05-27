@@ -1,4 +1,5 @@
 export {
     Button,
-    Input
-} from './components/index.ts'
+    Input,
+    DragDropList
+} from './components'

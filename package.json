@@ -1,10 +1,11 @@
 {
-  "name": "vite-project",
+  "name": "bwit-react-ui-lib",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.4",
   "type": "module",
   "license": "MIT",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -31,17 +32,18 @@
   "dependencies": {
     "devextreme": "23.2",
     "devextreme-react": "23.2",
-    "my-react-ui-library-salluk71": "^1.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.18.0",
+    "@swc/core": "^1.5.7",
     "@types/node": "^20.12.12",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
